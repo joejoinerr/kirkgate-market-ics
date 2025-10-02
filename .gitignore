@@ -163,3 +163,7 @@ cython_debug/
 
 # macOS files
 .DS_Store
+
+# Custom
+artifacts
+.aider*
