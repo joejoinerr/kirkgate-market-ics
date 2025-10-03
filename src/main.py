@@ -246,14 +246,18 @@ def file_content_matches_existing(file_path: Path, content: str) -> bool:
 def main() -> None:
     """Main application entry point."""
     settings.artifacts_dir.mkdir(parents=True, exist_ok=True)
+    ics_file_path = settings.artifacts_dir / settings.ics_file_name
+
     html = get_page_html("https://markets.leeds.gov.uk/whats-kirkgate")
     events_table_html = find_html_events_table(html)
     events_html_file_path = settings.artifacts_dir / settings.html_file_name
     if file_content_matches_existing(
         file_path=events_html_file_path, content=events_table_html
     ):
-        logger.info("No changes detected in events HTML. Exiting.")
-        return
+        logger.info("No changes detected in events HTML.")
+        if ics_file_path.exists():
+            # If the HTML hasn't changed and the ICS file exists, skip regeneration.
+            return
     events_html_file_path.write_text(events_table_html, encoding="utf-8")
 
     openrouter_api_key = settings.openrouter_api_key.get_secret_value()
@@ -269,7 +273,6 @@ def main() -> None:
     )
 
     ics_content = create_ics_from_events(events)
-    ics_file_path = settings.artifacts_dir / settings.ics_file_name
     ics_file_path.write_text(ics_content, encoding="utf-8")
     logger.info("ICS file written to path: {}", str(ics_file_path))
 
