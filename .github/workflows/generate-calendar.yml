@@ -11,6 +11,9 @@ jobs:
   generate:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # To commit changes
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
