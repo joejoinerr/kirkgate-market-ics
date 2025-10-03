@@ -203,6 +203,7 @@ def create_ics_from_events(events: list[Event]) -> str:
             f"DTEND:{end_datetime.strftime('%Y%m%dT%H%M%S')}",
             f"SUMMARY:{event.title}",
             f"DESCRIPTION:{description}",
+            "LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK",
             "END:VEVENT",
         ]
         event_entries.extend(event_entry)
