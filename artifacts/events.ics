@@ -3,219 +3,246 @@ VERSION:2.0
 PRODID:-//MyPythonScript//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-UID:212fd02f-7311-46dc-9dd6-e082f851caee
-DTSTAMP:20251003T010837Z
+UID:0dc30a2c-4417-4d3a-a5f7-2209bd702f99
+DTSTAMP:20251003T012803Z
 DTSTART:20251002T100000
 DTEND:20251002T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:a3d650d5-d22b-47ac-9082-e850bb920199
-DTSTAMP:20251003T010837Z
-DTSTART:20251002T130000
-DTEND:20251002T133000
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-END:VEVENT
-BEGIN:VEVENT
-UID:d80c847b-41ff-4691-9d1a-487e5376c1f1
-DTSTAMP:20251003T010837Z
+UID:0fdbb4d0-44ef-4d38-a231-405eba03b551
+DTSTAMP:20251003T012803Z
 DTSTART:20251003T100000
 DTEND:20251003T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:a9d7f00c-76f9-4746-bd2e-27f2ef87ce03
-DTSTAMP:20251003T010837Z
-DTSTART:20251004T100000
-DTEND:20251004T160000
-SUMMARY:Leeds Vintage, Indie & Flea Market
-DESCRIPTION:A mix of vintage traders selling clothing, homeware & collectables.
-END:VEVENT
-BEGIN:VEVENT
-UID:c4211821-d40a-4f7b-a9e1-19c27c664d6b
-DTSTAMP:20251003T010837Z
+UID:8d7df735-cb31-4473-b45e-bb7b8c737c9f
+DTSTAMP:20251003T012803Z
 DTSTART:20251009T100000
 DTEND:20251009T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:4d18345d-4ff5-4126-a349-e16c88ea4c87
-DTSTAMP:20251003T010837Z
-DTSTART:20251009T130000
-DTEND:20251009T133000
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-END:VEVENT
-BEGIN:VEVENT
-UID:337dce48-c112-43c8-97ed-3af06bfffebf
-DTSTAMP:20251003T010837Z
-DTSTART:20251009T110000
-DTEND:20251009T150000
-SUMMARY:World Mental Health Day
-DESCRIPTION:Awareness and information stalls.
-END:VEVENT
-BEGIN:VEVENT
-UID:9b868896-68e5-4473-a3f8-fb9386679fbb
-DTSTAMP:20251003T010837Z
+UID:8b9729a1-1722-4597-9bf3-4a35919cbfe6
+DTSTAMP:20251003T012803Z
 DTSTART:20251010T100000
 DTEND:20251010T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:49ce9301-4f57-4f33-b596-013d41e320d0
-DTSTAMP:20251003T010837Z
-DTSTART:20251011T100000
-DTEND:20251011T160000
-SUMMARY:Leeds Record Fair
-DESCRIPTION:Over 80 stalls across 2 halls.
-END:VEVENT
-BEGIN:VEVENT
-UID:09459194-838e-42be-8565-8465c97f0b38
-DTSTAMP:20251003T010837Z
-DTSTART:20251011T130000
-DTEND:20251011T150000
-SUMMARY:Leeds Umbrella CIC
-DESCRIPTION:Official launch of the new mural in the Market Kitchen.
-END:VEVENT
-BEGIN:VEVENT
-UID:52fba519-d6ac-444e-b36c-a910deb17019
-DTSTAMP:20251003T010837Z
+UID:3cd14cb6-0e0b-4f9c-9a4e-536768a291ad
+DTSTAMP:20251003T012803Z
 DTSTART:20251016T100000
 DTEND:20251016T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:065e0c5c-6d17-4a00-a406-db4d0fe00d9f
-DTSTAMP:20251003T010837Z
-DTSTART:20251016T130000
-DTEND:20251016T133000
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-END:VEVENT
-BEGIN:VEVENT
-UID:457a4aaf-49ca-4cce-9f44-e6db8473593b
-DTSTAMP:20251003T010837Z
+UID:a43e245a-d1c4-4fa7-bd61-4ec93c085b84
+DTSTAMP:20251003T012803Z
 DTSTART:20251017T100000
 DTEND:20251017T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:8a0ace7e-232c-4254-b3d5-2196b393e759
-DTSTAMP:20251003T010837Z
-DTSTART:20251018T100000
-DTEND:20251018T160000
-SUMMARY:Leeds Festival of Gothica, Alternative Market
-DESCRIPTION:With 140+ traders over 3 zones of curiosity, fashion, antiquity, art, jewellery, magickal paraphernalia, dark homeware and horror.
-END:VEVENT
-BEGIN:VEVENT
-UID:5cc2b410-8f16-4cc5-9a68-9892d08d9e69
-DTSTAMP:20251003T010837Z
+UID:b0eaa60a-65e9-4b13-a96a-6ccfe1886e61
+DTSTAMP:20251003T012803Z
 DTSTART:20251023T100000
 DTEND:20251023T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:2f275586-c3dd-4af5-8657-4561ea095299
-DTSTAMP:20251003T010837Z
-DTSTART:20251023T130000
-DTEND:20251023T133000
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-END:VEVENT
-BEGIN:VEVENT
-UID:9ba2bdea-cfc1-4f63-8f16-3a1d2bbdc03f
-DTSTAMP:20251003T010837Z
-DTSTART:20251023T100000
-DTEND:20251023T170000
-SUMMARY:Dear Laila, part of Transform festival
-DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
-END:VEVENT
-BEGIN:VEVENT
-UID:ed58cce8-eeeb-40a0-a5eb-d54447796a4a
-DTSTAMP:20251003T010837Z
+UID:d705c019-8dcf-4429-a799-7baf4a4e5dde
+DTSTAMP:20251003T012803Z
 DTSTART:20251024T100000
 DTEND:20251024T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:3461ca85-7063-48f6-9130-c82a48dbfb13
-DTSTAMP:20251003T010837Z
-DTSTART:20251024T100000
-DTEND:20251024T170000
-SUMMARY:Dear Laila, part of Transform festival
-DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
-END:VEVENT
-BEGIN:VEVENT
-UID:58851ddb-6f6f-49d9-814c-41e9d65fa0a3
-DTSTAMP:20251003T010837Z
-DTSTART:20251025T100000
-DTEND:20251025T170000
-SUMMARY:Dear Laila, part of Transform festival
-DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
-END:VEVENT
-BEGIN:VEVENT
-UID:34c67831-3493-4013-a7c9-72a9cdd7a932
-DTSTAMP:20251003T010837Z
-DTSTART:20251025T100000
-DTEND:20251025T160000
-SUMMARY:Bee Crafty Craft Market
-DESCRIPTION:With 40 craft traders gathering to showcase all their seriously special craft items, come along and prepare to be impressed!
-END:VEVENT
-BEGIN:VEVENT
-UID:1ac8ed7a-2bba-4df5-8f4b-ed839b865fd3
-DTSTAMP:20251003T010837Z
-DTSTART:20251028T110000
-DTEND:20251028T150000
-SUMMARY:Wizardry fun at Leeds Kirkgate Market
-DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
-END:VEVENT
-BEGIN:VEVENT
-UID:a0abe056-879a-4d3e-9af7-c54ad81794a3
-DTSTAMP:20251003T010837Z
-DTSTART:20251029T110000
-DTEND:20251029T150000
-SUMMARY:Wizardry fun at Leeds Kirkgate Market
-DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
-END:VEVENT
-BEGIN:VEVENT
-UID:c7b512a3-9e3d-47b6-8b6b-7e19fc62e3ee
-DTSTAMP:20251003T010837Z
+UID:47a465cc-e7dc-4e58-955b-674b68134cd8
+DTSTAMP:20251003T012803Z
 DTSTART:20251030T100000
 DTEND:20251030T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:a223fb8d-5390-42a3-9deb-b20221213d07
-DTSTAMP:20251003T010837Z
-DTSTART:20251030T130000
-DTEND:20251030T133000
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-END:VEVENT
-BEGIN:VEVENT
-UID:9c1953a0-5bc7-40fa-aaca-c0bae2619dc8
-DTSTAMP:20251003T010837Z
-DTSTART:20251030T110000
-DTEND:20251030T150000
-SUMMARY:Wizardry fun at Leeds Kirkgate Market
-DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
-END:VEVENT
-BEGIN:VEVENT
-UID:e74b0e96-b56f-4c6a-a169-6088a56b4f4c
-DTSTAMP:20251003T010837Z
+UID:4dd8484f-ad32-49fa-918f-82defa20b8a8
+DTSTAMP:20251003T012803Z
 DTSTART:20251031T100000
 DTEND:20251031T160000
 SUMMARY:The Only Wrap to Bee
 DESCRIPTION:Arts and crafts sale and fundraising tombola.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:e31e6542-c3d0-4241-a718-5163f57eb45c
+DTSTAMP:20251003T012803Z
+DTSTART:20251002T130000
+DTEND:20251002T133000
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:855c2c01-7a8a-4b4e-8217-6cd6d4c8169f
+DTSTAMP:20251003T012803Z
+DTSTART:20251009T130000
+DTEND:20251009T133000
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:4f845689-3333-4249-9cbb-5ca2d71df1c8
+DTSTAMP:20251003T012803Z
+DTSTART:20251016T130000
+DTEND:20251016T133000
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:c286a82e-f220-4aad-b2d0-0cb8b056a3ba
+DTSTAMP:20251003T012803Z
+DTSTART:20251023T130000
+DTEND:20251023T133000
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:5f6d211d-b03d-47df-a29b-f3af2323fe6d
+DTSTAMP:20251003T012803Z
+DTSTART:20251030T130000
+DTEND:20251030T133000
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:4f681f0f-2326-46bf-bcdb-d9a66c96cb70
+DTSTAMP:20251003T012803Z
+DTSTART:20251004T100000
+DTEND:20251004T160000
+SUMMARY:Leeds Vintage, Indie & Flea Market
+DESCRIPTION:A mix of vintage traders selling clothing, homeware & collectables.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:a6106165-6c43-405c-ba37-a11cf7524658
+DTSTAMP:20251003T012803Z
+DTSTART:20251009T110000
+DTEND:20251009T150000
+SUMMARY:World Mental Health Day
+DESCRIPTION:Awareness and information stalls.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:fa21ee47-0a3c-4ebd-97aa-a62411ca1563
+DTSTAMP:20251003T012803Z
+DTSTART:20251011T100000
+DTEND:20251011T160000
+SUMMARY:Leeds Record Fair
+DESCRIPTION:Over 80 stalls across 2 halls.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:7dd29f17-9f92-493d-92fb-396e65912718
+DTSTAMP:20251003T012803Z
+DTSTART:20251011T130000
+DTEND:20251011T150000
+SUMMARY:Leeds Umbrella CIC
+DESCRIPTION:Official launch of the new mural in the Market Kitchen.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:ea045f26-5808-4f41-af21-5c816e8b4dd3
+DTSTAMP:20251003T012803Z
+DTSTART:20251018T100000
+DTEND:20251018T160000
+SUMMARY:Leeds Festival of Gothica, Alternative Market
+DESCRIPTION:With 140+ traders over 3 zones of curiosity, fashion, antiquity, art, jewellery, magickal paraphernalia, dark homeware and horror.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:00e11795-b4a9-435e-a7ac-1ec081dfae6f
+DTSTAMP:20251003T012803Z
+DTSTART:20251023T100000
+DTEND:20251023T170000
+SUMMARY:Dear Laila, part of Transform festival
+DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:3289ba8d-258c-4c78-a4e2-35e700343ba8
+DTSTAMP:20251003T012803Z
+DTSTART:20251024T100000
+DTEND:20251024T170000
+SUMMARY:Dear Laila, part of Transform festival
+DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:bddfed49-d03f-4163-87a0-d93a88732c8f
+DTSTAMP:20251003T012803Z
+DTSTART:20251025T100000
+DTEND:20251025T170000
+SUMMARY:Dear Laila, part of Transform festival
+DESCRIPTION:Through the story of one family, this intimate, interactive installation shares the Palestinian experience of displacement and resistance.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:d5862d3a-31cc-435f-8d0f-82a2ffcc2a5a
+DTSTAMP:20251003T012803Z
+DTSTART:20251025T100000
+DTEND:20251025T160000
+SUMMARY:Bee Crafty Craft Market
+DESCRIPTION:With 40 craft traders gathering to showcase all their seriously special craft items, come along and prepare to be impressed!
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:fb590171-8984-4281-a2d7-c6083e10370a
+DTSTAMP:20251003T012803Z
+DTSTART:20251028T110000
+DTEND:20251028T150000
+SUMMARY:Wizardry fun at Leeds Kirkgate Market
+DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:51aa1641-dcf8-4e4e-ab84-8620232cf36e
+DTSTAMP:20251003T012803Z
+DTSTART:20251029T110000
+DTEND:20251029T150000
+SUMMARY:Wizardry fun at Leeds Kirkgate Market
+DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:7ecd8e4e-0e28-4538-b26b-ea2fbc21a0e5
+DTSTAMP:20251003T012803Z
+DTSTART:20251030T110000
+DTEND:20251030T150000
+SUMMARY:Wizardry fun at Leeds Kirkgate Market
+DESCRIPTION:Wizard and witches’ theme FREE fun which includes wand training, themed games and balloon modelling and more.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 END:VCALENDAR
