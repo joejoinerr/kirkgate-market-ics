@@ -5,6 +5,7 @@ import json
 import uuid
 from datetime import date, datetime, time
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import httpx
 import pydantic
@@ -17,6 +18,9 @@ from settings import load_settings
 
 settings = load_settings()
 logconfig.setup()
+
+LONDON_TIMEZONE = ZoneInfo("Europe/London")
+UTC_TIMEZONE = ZoneInfo("UTC")
 
 
 class Event(pydantic.BaseModel):
@@ -188,8 +192,15 @@ def create_ics_from_events(events: list[Event]) -> str:
     event_entries = []
     for event in events:
         # Combine the date and time objects into datetime objects
-        start_datetime = datetime.combine(event.date, event.start_time)
-        end_datetime = datetime.combine(event.date, event.end_time)
+        start_datetime = datetime.combine(
+            event.date, event.start_time, tzinfo=LONDON_TIMEZONE
+        )
+        end_datetime = datetime.combine(
+            event.date, event.end_time, tzinfo=LONDON_TIMEZONE
+        )
+        # Convert to UTC for ICS format
+        start_datetime_utc = start_datetime.astimezone(UTC_TIMEZONE)
+        end_datetime_utc = end_datetime.astimezone(UTC_TIMEZONE)
 
         # Escape newlines in the description for ICS format
         description = (event.description or "").replace("\n", "\\n")
@@ -199,8 +210,8 @@ def create_ics_from_events(events: list[Event]) -> str:
             "BEGIN:VEVENT",
             f"UID:{uuid.uuid4()}",
             f"DTSTAMP:{creation_timestamp}",
-            f"DTSTART:{start_datetime.strftime('%Y%m%dT%H%M%S')}",
-            f"DTEND:{end_datetime.strftime('%Y%m%dT%H%M%S')}",
+            f"DTSTART:{start_datetime_utc.strftime('%Y%m%dT%H%M%S')}",
+            f"DTEND:{end_datetime_utc.strftime('%Y%m%dT%H%M%S')}",
             f"SUMMARY:{event.title}",
             f"DESCRIPTION:{description}",
             "LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK",
