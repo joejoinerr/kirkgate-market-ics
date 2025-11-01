@@ -34,7 +34,8 @@ jobs:
       run: uv run src/main.py
       env:
         OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        EVENTS_PAGE_URL: ${{ secrets.EVENTS_PAGE_URL }}
+        OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+        EVENTS_PAGE_URL: ${{ vars.EVENTS_PAGE_URL }}
 
     - name: Commit generated files
       uses: stefanzweifel/git-auto-commit-action@v6
