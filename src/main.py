@@ -112,6 +112,7 @@ def get_events_month(html: str, openrouter_api_key: str, model: str) -> int:
         model=model,
         api_key=openrouter_api_key,
     )
+    logger.debug(ai_response)
     return int(ai_response)
 
 
