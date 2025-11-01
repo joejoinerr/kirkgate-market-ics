@@ -112,6 +112,8 @@ def get_events_month(html: str, openrouter_api_key: str, model: str) -> int:
         model=model,
         api_key=openrouter_api_key,
     )
+    # replace special tokens which sometimes appear in response
+    ai_response = ai_response.replace("<｜begin▁of▁sentence｜>", "")
     logger.debug(ai_response)
     return int(ai_response)
 
@@ -132,7 +134,8 @@ def create_events_from_html(
     """
     prompt = """\
     Can you please format the following HTML into a JSON array? DO NOT include any
-    commentary, only the JSON response.
+    commentary, only the JSON response. Respond only with the raw text - do not wrap
+    the JSON in a markdown block or any other markup.
 
     The returned object should be as follows:
 
@@ -163,7 +166,11 @@ def create_events_from_html(
         model=model,
         api_key=openrouter_api_key,
     )
-    parsed_ai_response = json.loads(ai_response)
+    try:
+        parsed_ai_response = json.loads(ai_response)
+    except json.JSONDecodeError:
+        logger.debug(ai_response)
+        raise
     return [Event.model_validate(event_detail) for event_detail in parsed_ai_response]
 
 
