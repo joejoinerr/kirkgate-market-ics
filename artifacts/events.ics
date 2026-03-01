@@ -3,136 +3,136 @@ VERSION:2.0
 PRODID:-//MyPythonScript//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-UID:0682c75c-2d3d-40ee-b099-ce6dbf3e0aff
-DTSTAMP:20260207T011544Z
-DTSTART:20250206T130000Z
-DTEND:20250206T133000Z
+UID:cf6c4921-e404-4a6c-9f6d-200323d6f8fc
+DTSTAMP:20260301T110700Z
+DTSTART:20260205T130000Z
+DTEND:20260205T133000Z
 SUMMARY:FREE 15 minute meditation session
 DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:4097b772-323d-4d10-8330-195cf4c10450
-DTSTAMP:20260207T011544Z
-DTSTART:20250213T130000Z
-DTEND:20250213T133000Z
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:90cadca7-2b9f-435a-a49b-87df9e6c872a
-DTSTAMP:20260207T011544Z
-DTSTART:20250220T130000Z
-DTEND:20250220T133000Z
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:28fc7ae0-6cc2-44c8-bc96-b64b39a1c229
-DTSTAMP:20260207T011544Z
-DTSTART:20250227T130000Z
-DTEND:20250227T133000Z
-SUMMARY:FREE 15 minute meditation session
-DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:21bb07a3-36f6-4db4-a09e-64da87f12d97
-DTSTAMP:20260207T011544Z
-DTSTART:20250207T100000Z
-DTEND:20250207T160000Z
+UID:2fd3f95c-b6b4-406d-a530-99c4eeb584af
+DTSTAMP:20260301T110700Z
+DTSTART:20260207T100000Z
+DTEND:20260207T160000Z
 SUMMARY:Hong Kong Lunar New Year Market
 DESCRIPTION:Leeds Umbrella CIC will be hosting a market to celebrate the Chinese New Year.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:a4a84aaf-fd35-44e1-ac69-623b46041922
-DTSTAMP:20260207T011544Z
-DTSTART:20250214T100000Z
-DTEND:20250214T160000Z
+UID:1fa02549-cb41-472c-8a70-fb775bae54ba
+DTSTAMP:20260301T110700Z
+DTSTART:20260212T130000Z
+DTEND:20260212T133000Z
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:bdaba125-8f23-4755-ad3b-6b9917a3dfdd
+DTSTAMP:20260301T110700Z
+DTSTART:20260214T100000Z
+DTEND:20260214T160000Z
 SUMMARY:Leeds Record Fair
 DESCRIPTION:Over 80 stalls across 2 halls.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:76a52c31-bfb5-48a9-8fba-9630652053a9
-DTSTAMP:20260207T011544Z
-DTSTART:20250217T110000Z
-DTEND:20250217T150000Z
+UID:46d08a41-9e89-4fc1-9ced-d81474a51622
+DTSTAMP:20260301T110700Z
+DTSTART:20260217T110000Z
+DTEND:20260217T150000Z
 SUMMARY:Fabulous February half-term FUN
-DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter and balloon modeller around the market.
+DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter around the market.  Plus FREE pizza making and bread making with FoodSavers Cookery School.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:8784011f-bd65-4508-b536-6a58ea154bbc
-DTSTAMP:20260207T011544Z
-DTSTART:20250218T110000Z
-DTEND:20250218T150000Z
-SUMMARY:Fabulous February half-term FUN
-DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter and balloon modeller around the market.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:90ce8cf0-7b6c-4e26-993a-d093badbe8fe
-DTSTAMP:20260207T011544Z
-DTSTART:20250219T110000Z
-DTEND:20250219T150000Z
-SUMMARY:Fabulous February half-term FUN
-DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter and balloon modeller around the market.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:dae8459c-3830-44c2-aeb2-46346d69709d
-DTSTAMP:20260207T011544Z
-DTSTART:20250220T110000Z
-DTEND:20250220T150000Z
-SUMMARY:Fabulous February half-term FUN
-DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter and balloon modeller around the market.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:d1c5891b-5bdd-4b28-abfe-b55ce9a49c09
-DTSTAMP:20260207T011544Z
-DTSTART:20250221T110000Z
-DTEND:20250221T150000Z
-SUMMARY:Fabulous February half-term FUN
-DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter and balloon modeller around the market.
-LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
-END:VEVENT
-BEGIN:VEVENT
-UID:91c6bea0-cf7c-4968-9e74-ab6f33fa906c
-DTSTAMP:20260207T011544Z
-DTSTART:20250217T110000Z
-DTEND:20250217T140000Z
+UID:029b8a3a-e45f-4959-9baf-430119928cb6
+DTSTAMP:20260301T110700Z
+DTSTART:20260217T110000Z
+DTEND:20260217T140000Z
 SUMMARY:FREE Climbing Wall (outdoor market set own area)
 DESCRIPTION:FREE activity provided by Herd Farm, please note this activity will be weather dependant.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:c4174903-84cb-49b6-85aa-a8b38a35673e
-DTSTAMP:20260207T011544Z
-DTSTART:20250221T100000Z
-DTEND:20250221T160000Z
+UID:113885f4-27a0-4566-926a-5fdbeb6ef7b4
+DTSTAMP:20260301T110700Z
+DTSTART:20260218T110000Z
+DTEND:20260218T150000Z
+SUMMARY:Fabulous February half-term FUN
+DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter around the market.  Plus FREE pizza making and bread making with FoodSavers Cookery School.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:6dfbe0ed-3217-4ebb-81f0-9e1298410016
+DTSTAMP:20260301T110700Z
+DTSTART:20260219T110000Z
+DTEND:20260219T150000Z
+SUMMARY:Fabulous February half-term FUN
+DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter around the market.  Plus FREE pizza making and bread making with FoodSavers Cookery School.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:dd526d78-a448-4576-9d06-57bb33a73e07
+DTSTAMP:20260301T110700Z
+DTSTART:20260219T130000Z
+DTEND:20260219T133000Z
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:2aa740be-2223-4c90-9606-15f2d50c9ea2
+DTSTAMP:20260301T110700Z
+DTSTART:20260220T110000Z
+DTEND:20260220T150000Z
+SUMMARY:Fabulous February half-term FUN
+DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter around the market.  Plus FREE pizza making and bread making with FoodSavers Cookery School.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:cb2c28f2-b19d-455a-984b-c942c0546990
+DTSTAMP:20260301T110700Z
+DTSTART:20260221T110000Z
+DTEND:20260221T150000Z
+SUMMARY:Fabulous February half-term FUN
+DESCRIPTION:FREE activities during the week including: bath bomb making in the 1904 Hall, a giant inflatable on Row J, the Circus School in the Market Kitchen and a FREE face painter around the market.  Plus FREE pizza making and bread making with FoodSavers Cookery School.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:e8c40550-48b3-4412-b5a4-fd7aa3236669
+DTSTAMP:20260301T110700Z
+DTSTART:20260221T100000Z
+DTEND:20260221T160000Z
 SUMMARY:Makers Market
 DESCRIPTION:Introducing a host of new traders to Leeds Markets at this new Makers Market.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:09e3b0f7-f2c3-45ce-9cca-b8ab5e060b55
-DTSTAMP:20260207T011544Z
-DTSTART:20250221T103000Z
-DTEND:20250221T160000Z
+UID:b89fd31b-e5e4-4d63-bdfa-14a2e38abed0
+DTSTAMP:20260301T110700Z
+DTSTART:20260221T103000Z
+DTEND:20260221T160000Z
 SUMMARY:FREE CPR skills with St John Ambulance (Row J)
 DESCRIPTION:St John Ambulance will be offering FREE CPR skills with a fundraising stall.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
 END:VEVENT
 BEGIN:VEVENT
-UID:09ad9e43-e24f-4fd9-a0bf-debfaa1ca674
-DTSTAMP:20260207T011544Z
-DTSTART:20250228T100000Z
-DTEND:20250228T160000Z
+UID:234c47c6-bbcc-4fd3-925b-d96ed80e0a27
+DTSTAMP:20260301T110700Z
+DTSTART:20260226T130000Z
+DTEND:20260226T133000Z
+SUMMARY:FREE 15 minute meditation session
+DESCRIPTION:Unit R, guided meditation with the Kadampa Meditation Centre.
+LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
+END:VEVENT
+BEGIN:VEVENT
+UID:acc0879e-7aad-4bf0-bcd9-f019566485f6
+DTSTAMP:20260301T110700Z
+DTSTART:20260228T100000Z
+DTEND:20260228T160000Z
 SUMMARY:Art House Art Fayre
 DESCRIPTION:Up to 30 exhibiting artists from Leeds and Yorkshire.
 LOCATION:Leeds Kirkgate Market, Kirkgate, Leeds LS2 7HY, UK
