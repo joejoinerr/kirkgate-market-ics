@@ -256,7 +256,7 @@ def main() -> None:
     settings.artifacts_dir.mkdir(parents=True, exist_ok=True)
     ics_file_path = settings.artifacts_dir / settings.ics_file_name
 
-    html = get_page_html("https://markets.leeds.gov.uk/whats-kirkgate")
+    html = get_page_html(str(settings.events_page_url))
     events_table_html = find_html_events_table(html)
     events_html_file_path = settings.artifacts_dir / settings.html_file_name
     if file_content_matches_existing(

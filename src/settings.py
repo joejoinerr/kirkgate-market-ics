@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Annotated, Literal
 
 import pydantic
-from pydantic import Field
+from pydantic import Field, HttpUrl
 from pydantic_settings import BaseSettings
 
 type LogLevel = Literal[
@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     """Application settings."""
 
     events_page_url: Annotated[
-        str, Field(description="URL of the events page to scrape")
+        HttpUrl, Field(description="URL of the events page to scrape")
     ]
     openrouter_api_key: Annotated[
         pydantic.SecretStr, Field(description="OpenRouter API key")
