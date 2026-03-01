@@ -159,7 +159,9 @@ def create_events_from_html(
     {events_table_html}
     ```
     """
-    month_cal = calendar.TextCalendar().formatmonth(2025, month)
+    current_year = datetime.now().year
+    year_for_calendar = current_year + 1 if month == 1 else current_year
+    month_cal = calendar.TextCalendar().formatmonth(year_for_calendar, month)
     formatted_prompt = prompt.format(month_cal=month_cal, events_table_html=html)
     ai_response = get_openrouter_response(
         prompt=formatted_prompt,
