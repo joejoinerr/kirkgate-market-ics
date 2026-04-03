@@ -34,6 +34,9 @@ class Settings(BaseSettings):
     html_file_name: Annotated[Path, Field(description="HTML file name")] = Path(
         "events.html"
     )
+    store_html: Annotated[
+        bool, Field(description="Whether to store the scraped HTML")
+    ] = True
     scraper_user_agent: Annotated[
         str, Field(description="User-Agent string for web scraping")
     ] = "Mozilla/5.0 (Macintosh; Intel Mac OS X 15.7; rv:143.0) Gecko/20100101 Firefox/143.0"
