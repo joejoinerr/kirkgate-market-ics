@@ -2,6 +2,7 @@
 
 import calendar
 import json
+import sys
 import uuid
 from datetime import date, datetime, time
 from pathlib import Path
@@ -9,6 +10,7 @@ from zoneinfo import ZoneInfo
 
 import httpx
 import pydantic
+import tenacity
 from bs4 import BeautifulSoup
 from loguru import logger
 
@@ -65,6 +67,20 @@ def find_html_events_table(html: str) -> str:
     return str(soup.find("main").find("table"))
 
 
+def is_retryable_openrouter_error(exception: BaseException) -> bool:
+    """Determines if an exception from the OpenRouter API is retryable."""
+    if isinstance(exception, HTTPStatusError):
+        # Retry on 429 Too Many Requests or 503 Service Unavailable
+        return exception.status_code in {429, 503}
+    return False
+
+
+@tenacity.retry(
+    retry=tenacity.retry_if_exception(is_retryable_openrouter_error),
+    wait=tenacity.wait_exponential(multiplier=1, min=2, max=30),
+    stop=tenacity.stop_after_attempt(5),
+    reraise=True,
+)
 def get_openrouter_response(prompt: str, model: str, api_key: str) -> str:
     """Sends a prompt to the OpenRouter API and returns the response content."""
     headers = {
@@ -84,6 +100,7 @@ def get_openrouter_response(prompt: str, model: str, api_key: str) -> str:
         response.raise_for_status()
         return response.json()["choices"][0]["message"]["content"]
     except httpx.HTTPStatusError as e:
+        logger.debug("Response headers: {}", response.headers)
         raise HTTPStatusError(
             status_code=e.response.status_code, response_text=e.response.text
         ) from e
@@ -91,14 +108,20 @@ def get_openrouter_response(prompt: str, model: str, api_key: str) -> str:
         raise
 
 
-def get_events_month(html: str, openrouter_api_key: str, model: str) -> int:
+def get_events_month(html: str, openrouter_api_key: str, model: str) -> list[int]:
     """Gets the month number from the events page HTML."""
     prompt = """\
-    Can you tell me which month the events in this HTML calendar are for? I want you to
-    reply with the number of a month in the year, from 1-12, where 1 is January, 2 is
-    February, and so on.
+    Can you tell me which months the events in this HTML calendar are for? Reply with a
+    JSON list containing all of the names of the months that the events are in.
 
-    Reply only with a number, no commentary or anything else.
+    Respond only with the JSON list - do not include any commentary, and do not wrap
+    the JSON in a markdown block or any other markup.
+
+    For example:
+
+    ```json
+    ["January", "February"]
+    ```
 
     Here is the HTML to parse:
 
@@ -114,18 +137,33 @@ def get_events_month(html: str, openrouter_api_key: str, model: str) -> int:
     )
     # replace special tokens which sometimes appear in response
     ai_response = ai_response.replace("<｜begin▁of▁sentence｜>", "")
-    logger.debug(ai_response)
-    return int(ai_response)
+    parsed_response = json.loads(ai_response)
+    normalized_response = [month.strip().title() for month in parsed_response]
+    logger.debug("Months present: {}", normalized_response)
+    all_month_names = list(calendar.month_name)
+    month_numbers = [all_month_names.index(month) for month in normalized_response]
+    return month_numbers
+
+
+def get_text_calendar(months: list[int]) -> str:
+    """Generates a text calendar for the given month numbers."""
+    current_year = datetime.now().year
+    calendar_strings = []
+    for month in months:
+        year_for_calendar = current_year + 1 if month == 1 else current_year
+        month_cal = calendar.TextCalendar().formatmonth(year_for_calendar, month)
+        calendar_strings.append(month_cal)
+    return "\n".join(calendar_strings)
 
 
 def create_events_from_html(
-    html: str, month: int, openrouter_api_key: str, model: str
+    html: str, months: list[int], openrouter_api_key: str, model: str
 ) -> list[Event]:
     """Creates a list of Event objects from the given HTML content.
 
     Args:
         html: The HTML content containing the events table.
-        month: The month number (1-12) for the events.
+        months: A list of month numbers corresponding to the events in the HTML.
         openrouter_api_key: The API key for OpenRouter.
         model: The OpenRouter model to use.
 
@@ -137,19 +175,20 @@ def create_events_from_html(
     commentary, only the JSON response. Respond only with the raw text - do not wrap
     the JSON in a markdown block or any other markup.
 
-    The returned object should be as follows:
-
-    Use the following schemas:
+    Use the following schema:
 
     - date: ISO date
     - title (from Event field in table): string
     - description (from Event field in table): string OR null
-    - start_time (half of Time field in table): ISO time
-    - end_time (half of Time field in table): ISO time
+    - start_time (part of Time field in table): ISO time
+    - end_time (part of Time field in table): ISO time
 
-    If the event is on weekly throughout the month (e.g. "every Thursday"), please create a
-    JSON object for every applicable date. Here's a calendar for the month for you to
-    reference:
+    If the event is on weekly throughout the month (e.g. "every Thursday"), please
+    create a JSON object for every applicable date. If the event doesn't specify dates
+    or times (e.g. "times throughout the day"), please ignore that event and do not
+    include it in the response.
+
+    Here's a calendar for you to reference:
 
     {month_cal}
 
@@ -159,10 +198,9 @@ def create_events_from_html(
     {events_table_html}
     ```
     """
-    current_year = datetime.now().year
-    year_for_calendar = current_year + 1 if month == 1 else current_year
-    month_cal = calendar.TextCalendar().formatmonth(year_for_calendar, month)
+    month_cal = get_text_calendar(months)
     formatted_prompt = prompt.format(month_cal=month_cal, events_table_html=html)
+    logger.info("Creating events using AI model.", prompt=prompt)
     ai_response = get_openrouter_response(
         prompt=formatted_prompt,
         model=model,
@@ -170,10 +208,18 @@ def create_events_from_html(
     )
     try:
         parsed_ai_response = json.loads(ai_response)
+        events_list = [
+            Event.model_validate(event_detail) for event_detail in parsed_ai_response
+        ]
     except json.JSONDecodeError:
-        logger.debug(ai_response)
+        logger.debug("Problematic response: {}", ai_response)
         raise
-    return [Event.model_validate(event_detail) for event_detail in parsed_ai_response]
+    except pydantic.ValidationError:
+        logger.debug("Problematic response: {}", parsed_ai_response)
+        raise
+    else:
+        logger.info("Successfully fetched and parsed events data from AI model.")
+        return events_list
 
 
 def create_ics_from_events(events: list[Event]) -> str:
@@ -253,6 +299,7 @@ def file_content_matches_existing(file_path: Path, content: str) -> bool:
     return existing_content == content
 
 
+@logger.catch(onerror=lambda exc: sys.exit(1))
 def main() -> None:
     """Main application entry point."""
     settings.artifacts_dir.mkdir(parents=True, exist_ok=True)
@@ -268,16 +315,17 @@ def main() -> None:
         if ics_file_path.exists():
             # If the HTML hasn't changed and the ICS file exists, skip regeneration.
             return
-    events_html_file_path.write_text(events_table_html, encoding="utf-8")
+    if settings.store_html:
+        events_html_file_path.write_text(events_table_html, encoding="utf-8")
 
     openrouter_api_key = settings.openrouter_api_key.get_secret_value()
     model = settings.openrouter_model
-    month_number = get_events_month(
+    month_numbers: list[int] = get_events_month(
         events_table_html, openrouter_api_key=openrouter_api_key, model=model
     )
     events = create_events_from_html(
         html=events_table_html,
-        month=month_number,
+        months=month_numbers,
         openrouter_api_key=openrouter_api_key,
         model=model,
     )
